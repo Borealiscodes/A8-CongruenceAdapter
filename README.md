@@ -2,43 +2,82 @@
 
 System‑Agnostic Congruence Mapping • CAUSA‑Aligned • Altitude‑Safe Hallucination Detection
 
+Includes Bill Nye Teaching Tiles (Pedagogy Layer)
+
 ---
 
 🟥🟧 0. Overview
 
-A8‑CongruenceAdapter is a system‑agnostic congruence‑mapping layer that projects geometric drift, curvature, and stability signals from any model into CAUSA’s bounded valence/arousal space.
+A8‑CongruenceAdapter is a system‑agnostic congruence‑mapping layer that projects geometric reinforcement signals into CAUSA’s bounded valence/arousal space.
 
 It integrates:
 
-- geometric reinforcement signals from structural‑AI pipelines  
-- CAUSA’s congruence metrics  
+- geometric drift, curvature, contraction, trace deviation, and phase‑energy  
+- CAUSA’s congruence metrics (via public interface)  
 - Lean‑Hallucination‑Guard operator‑consistency checks  
+- A7.2 collapse‑surface repair (in active development)  
+- the Bill‑Nye Tile Pedagogy Layer (accessibility surface)
 
-The adapter provides a universal, interpretable metric for detecting instability, drift, and hallucination‑risk across diverse model architectures.
+A8 provides a universal, interpretable metric for detecting instability, drift, and hallucination‑risk across diverse model architectures.
 
----
-
-🟩🟦🟪 1. Altitude Tiles (Conceptual Map)
-
-| Emoji | Altitude | Description |
-|-------|----------|-------------|
-| 🟩 | A3 — Euclidean Geometry | Linear, metric‑stable space |
-| 🟦 | A4 — Spectral Geometry | Eigenbasis, drift decomposition |
-| 🟪 | A5 — Modal Geometry | Phase‑energy, modal continuity |
-| 🟨 | A6 — Dual Algebra | Dual‑compatible operators |
-| 🟧 | A6.5 — Firewall | Invariant preservation, trace‑class |
-| 🟥 | A7 — Non‑Dual Algebra | Collapse‑surface formation |
-| 🟥🟧 | A7.2 — Collapse‑Surface Repair | Reinforced geometric stabilization |
-| 🟪🟥 | A8 — Congruence Adapter (this repo) | System‑agnostic congruence mapping |
-
-A8 is the altitude where architecture‑specific geometric signals are transformed into architecture‑agnostic congruence metrics.
+A8 is quantum‑inspired (modal geometry, phase‑energy, contraction metrics)  
+but explicitly non‑quantum.
 
 ---
 
-👤 2. For Users
+🟩🟦🟪 1. Altitude Map (Structural‑AI Roadmap)
 
-Large language models can drift or destabilize under certain prompts or contexts.  
-A8‑CongruenceAdapter provides a simple, interpretable output:
+| Emoji | Altitude | Description | Status |
+|-------|----------|-------------|--------|
+| 🟩 | A3 — Euclidean Geometry | Linear, metric‑stable space | Stable |
+| 🟦 | A4 — Spectral Geometry | Eigenbasis, drift decomposition | Stable |
+| 🟪 | A5 — Modal Geometry | Phase‑energy, modal continuity | Stable |
+| 🟨 | A6 — Dual Algebra | Dual‑compatible operators | Stable |
+| 🟧 | A6.5 — Firewall | Invariant preservation, trace‑class | Stable |
+| 🟥 | A7 — Non‑Dual Algebra | Collapse‑surface formation | Stable |
+| 🟥🟧 | A7.2 — Collapse‑Surface Repair | Reinforced geometric stabilization | Under Construction |
+| 🟪🟥 | A8 — Congruence Adapter | System‑agnostic congruence mapping | This Repo |
+| 🟫✨ | A9 — Quantum Runtime (Planned) | Quantum spectral manifold runtime | Designation Pending |
+
+A8 is the altitude where architecture‑specific geometric signals become  
+architecture‑agnostic congruence metrics.
+
+---
+
+🟦🟧 2. Bill Nye Teaching Tiles (Pedagogy Layer)
+
+Tiles are metaphor‑rich, accessibility‑first explainers.  
+They do not replace the technical documentation.  
+They sit above it as the Teaching Surface.
+
+🟦 Geometric Signal Tiles
+- 🌈 Spectral Drift  
+- 🎢 Curvature  
+- 🕳 Hyperbolic Contraction  
+- ⚖️ Trace Deviation  
+- 🌪 Phase‑Energy  
+
+🟧 Congruence Space Tiles
+- 🙂 Valence  
+- ⚡ Arousal  
+
+🟩 Adapter & Safety Tiles
+- 🧩 A8 Explainer  
+- 🌉 Congruence Adapter  
+- 🧗 Altitude Safety  
+- 🛡 Validator Membrane  
+
+Tiles live in:
+
+`
+docs/tiles/
+`
+
+---
+
+👤 3. For Users
+
+A8 outputs a simple, interpretable congruence pair:
 
 `json
 {"valence": x, "arousal": y}
@@ -50,89 +89,103 @@ This enables:
 
 - model stability monitoring  
 - hallucination‑risk detection  
-- cross‑architecture drift comparison  
+- drift comparison across architectures  
 - safety dashboards and instrumentation  
 
-No model internals are required; only geometric signals.
+A8 requires no model internals — only geometric signals.
 
 ---
 
-🛠️ 3. For Engineers
+🛠️ 4. For Engineers
 
 A8‑CongruenceAdapter is:
 
 - MIT‑licensed  
 - system‑agnostic  
-- compatible with CAUSA’s non‑commercial license  
+- CAUSA‑compatible (non‑commercial license respected)  
 - validated through Lean‑Hallucination‑Guard  
-- safe to integrate into any pipeline  
+- altitude‑safe and drift‑bounded  
 
-Input signals may include:
+Input signals include:
 
-- spectral drift magnitudes  
-- curvature proxies (e.g., DEC holonomy)  
-- hyperbolic contraction factors  
-- trace‑class deviations  
-- phase‑energy metrics  
+- spectral drift  
+- curvature (e.g., DEC holonomy)  
+- hyperbolic contraction  
+- trace‑class deviation  
+- phase‑energy  
 
 Output:
 
 A CAUSA‑compatible congruence dict.
 
-The adapter does not modify CAUSA or any upstream pipeline.  
+A8 does not modify CAUSA or any upstream pipeline.  
 It operates purely through public interfaces and bounded projections.
 
 ---
 
-# 📐 4. For Geometers
+📐 5. For Geometers
 
-A8‑CongruenceAdapter defines a projection operator:
+A8 defines a projection operator:
 
-```tex
-\Pi_{\text{A8}} : \mathcal{S}_{\text{reinforced}} \rightarrow [-1,1]^2
-```
+\[
+\Pi{\text{A8}} : \mathcal{S}{\text{reinforced}} \rightarrow [-1,1]^2
+\]
 
 Where:
 
-- `\mathcal{S}_{\text{reinforced}}` is the space of geometric reinforcement signals  
-- `[-1,1]^2` is CAUSA’s congruence space  
+- \(\mathcal{S}_{\text{reinforced}}\) is the space of geometric reinforcement signals  
+- \([-1,1]^2\) is CAUSA’s congruence space  
 
-## Input Signals
+Input Signals
 
-```tex
-D = \|\Gamma(\Delta(x))\|            % Spectral Drift
-K = \|H(c) - I\|_F                   % DEC Holonomy Curvature
-C = \frac{\operatorname{atanh}(\|v\|)}{\|v\|}   % Hyperbolic Contraction
-T = |\operatorname{Tr}(\rho) - 1|    % Trace-Class Deviation
-P = \|\Im(z)\|                       % Phase-Energy
-```
+\[
+D = \|\Gamma(\Delta(x))\| \quad\text{(Spectral Drift)}
+\]
 
-## Projection Maps
+\[
+K = \|H(c) - I\|_F \quad\text{(DEC Holonomy Curvature)}
+\]
 
-```tex
+\[
+C = \frac{\operatorname{atanh}(\|v\|)}{\|v\|} \quad\text{(Hyperbolic Contraction)}
+\]
+
+\[
+T = |\operatorname{Tr}(\rho) - 1| \quad\text{(Trace-Class Deviation)}
+\]
+
+\[
+P = \|\Im(z)\| \quad\text{(Phase-Energy)}
+\]
+
+Projection Maps
+
+\[
 \text{valence} = f(D, P)
+\]
+
+\[
 \text{arousal} = g(K, C, T)
-```
+\]
 
-## Projection Properties
+Projection Properties
 
-- Lipschitz-bounded  
-- dual-compatible  
-- altitude-safe  
-- non-quantum  
-- system-agnostic
+- Lipschitz‑bounded  
+- dual‑compatible  
+- altitude‑safe  
+- non‑quantum  
+- system‑agnostic  
+
 ---
 
-🧭 5. CAUSA Acknowledgment
+🧭 6. CAUSA Acknowledgment
 
-A8‑CongruenceAdapter integrates CAUSA’s congruence metrics through its public interface.
+A8 integrates CAUSA’s congruence metrics through its public interface.
 
 It is not a derivative work of CAUSA.  
 It does not modify CAUSA.  
 It does not redistribute CAUSA.  
 It respects CAUSA’s non‑commercial license.
-
-Formal acknowledgment:
 
 > This project integrates CAUSA’s congruence metrics through its public interface.  
 > CAUSA is authored by Stell and licensed under a non‑commercial license.  
@@ -142,9 +195,9 @@ This follows CAUSA Section 5(b) precisely.
 
 ---
 
-📁 6. Repo Layout
+📁 7. Repo Layout (Technical Spine)
 
-<pre>
+`
 A8-CongruenceAdapter/
 │
 ├── README.md
@@ -156,8 +209,22 @@ A8-CongruenceAdapter/
 │   │   ├── A8_DeveloperNote.md
 │   │   ├── A8_AdapterDesign.md
 │   │   └── A8_HallucinationGuardValidation.md
-│   └── congruence/
-│       └── CAUSA_IntegrationGuide.md
+│   │
+│   ├── congruence/
+│   │   └── CAUSA_IntegrationGuide.md
+│   │
+│   └── tiles/
+│       ├── README.md
+│       ├── A8ExplainerTile.md
+│       ├── SpectralDriftTile.md
+│       ├── Curvature_Tile.md
+│       ├── HyperbolicContractionTile.md
+│       ├── TraceDeviationTile.md
+│       ├── PhaseEnergyTile.md
+│       ├── Valence_Tile.md
+│       ├── Arousal_Tile.md
+│       ├── AltitudeSafetyTile.md
+│       └── ValidatorMembraneTile.md
 │
 ├── src/
 │   ├── adapter/
@@ -181,7 +248,7 @@ A8-CongruenceAdapter/
     ├── testcongruencemapping.py
     ├── testsignalbounds.py
     └── testhallucinationguard.py
-</pre>
+`
 
 ---
 
