@@ -1,0 +1,149 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+
+\title{A8-CongruenceAdapter: Formal Mathematics}
+\author{Borealis S. Hedling}
+\date{October 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The A8-CongruenceAdapter provides a system-agnostic projection from 
+architecture-specific geometric reinforcement signals into CAUSA's bounded 
+congruence space. This document formalizes the mathematical structures used 
+in the adapter, including the projection operator, input signal definitions, 
+and the properties required for altitude-safe congruence mapping.
+\end{abstract}
+
+\section{Altitude Context}
+
+The A8 layer sits above the A7.2 collapse-surface repair altitude and below 
+the A9 interpretability lattice. It is defined as the altitude at which 
+architecture-specific geometric signals are transformed into architecture-agnostic 
+congruence coordinates.
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{A3} & Euclidean Geometry & Linear metric-stable space \\
+\textbf{A4} & Spectral Geometry & Eigenbasis drift decomposition \\
+\textbf{A5} & Modal Geometry & Phase-energy continuity \\
+\textbf{A6} & Dual Algebra & Dual-compatible operators \\
+\textbf{A6.5} & Firewall & Invariant preservation \\
+\textbf{A7} & Non-Dual Algebra & Collapse-surface formation \\
+\textbf{A7.2} & Collapse-Surface Repair & Reinforced stabilization \\
+\textbf{A8} & Congruence Adapter & System-agnostic projection layer \\
+\end{tabular}
+\end{center}
+
+\section{Projection Operator}
+
+The A8 projection operator maps reinforced geometric signals into CAUSA's 
+valence/arousal congruence space:
+
+\[
+\Pi_{\text{A8}} : \mathcal{S}_{\text{reinforced}} \rightarrow [-1,1]^2.
+\]
+
+Here, $\mathcal{S}_{\text{reinforced}}$ denotes the space of signals produced 
+by A7.2 reinforcement modules, including spectral drift, curvature, contraction, 
+trace deviation, and phase-energy.
+
+\section{Input Signals}
+
+The adapter consumes five primary geometric signals. Each is normalized and 
+bounded prior to projection.
+
+\subsection{Spectral Drift}
+
+\[
+D = \|\Gamma(\Delta(x))\|.
+\]
+
+This measures the magnitude of drift in the spectral decomposition of the 
+model's internal state.
+
+\subsection{Discrete Curvature (DEC Holonomy)}
+
+\[
+K = \|H(c) - I\|_F.
+\]
+
+This captures curvature via holonomy deviation in a discrete exterior calculus 
+framework.
+
+\subsection{Hyperbolic Contraction}
+
+\[
+C = \frac{\operatorname{atanh}(\|v\|)}{\|v\|}.
+\]
+
+This measures contraction in hyperbolic space, ensuring non-dual compatibility.
+
+\subsection{Trace-Class Deviation}
+
+\[
+T = |\operatorname{Tr}(\rho) - 1|.
+\]
+
+This quantifies deviation from trace-preserving behavior in the model's 
+state evolution.
+
+\subsection{Phase-Energy}
+
+\[
+P = \|\Im(z)\|.
+\]
+
+This measures imaginary-axis energy, capturing modal instability.
+
+\section{Projection Maps}
+
+The projection into CAUSA's congruence space is defined by two bounded 
+functions:
+
+\[
+\text{valence} = f(D, P),
+\]
+
+\[
+\text{arousal} = g(K, C, T).
+\]
+
+The functions $f$ and $g$ are monotonic, Lipschitz-bounded, and altitude-safe. 
+They ensure that all projected values lie within the interval $[-1,1]$.
+
+\section{Projection Properties}
+
+The A8 projection satisfies the following:
+
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Lipschitz-bounded:} Ensures numerical stability.
+\item \textbf{Dual-compatible:} Compatible with A6 dual algebra constraints.
+\item \textbf{Altitude-safe:} Respects altitude boundaries between A7.2 and A9.
+\item \textbf{Non-quantum:} No quantum operators or Hilbert-space assumptions.
+\item \textbf{System-agnostic:} Accepts signals from any model architecture.
+\end{itemize}
+
+\section{Acknowledgment}
+
+This mathematical specification integrates CAUSA's congruence space through 
+its public interface. CAUSA is authored by Stell and licensed under a 
+non-commercial license. The A8-CongruenceAdapter is independent of CAUSA's 
+codebase and is licensed under MIT.
+
+\section{Bibliography}
+
+\begin{itemize}[leftmargin=2em]
+\item Stell, \textit{CAUSA: Causal Agency and Utterance-State Alignment}, 2026.
+\item Hedling, Borealis S., \textit{Structural AI Altitude Model}, 2026.
+\end{itemize}
+
+\end{document}
